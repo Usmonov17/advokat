@@ -5,8 +5,8 @@
         <NuxtImg src="/logo.png" alt="logo" width="50" height="50" class="bg-white rounded-full" />
         <span class="text-2xl font-medium text-green-500">Advokatura</span>
       </NuxtLink>
-      <div class="">
-        <SharedDashboardItem />
+      <div>
+        <AdminBtns />
       </div>
     </div>
   </div>

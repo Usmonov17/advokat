@@ -1,27 +1,32 @@
 export const sidebarItems = [
   {
-    name: "Dashboards",
-    url: "/documents",
-    icon: "material-symbols:dashboard",
+    name: "Categories",
+    url: "/admin/categories",
+    icon: "material-symbols:category-rounded",
   },
   {
-    name: "To Do",
-    url: "/documents/to-do",
-    icon: "i-material-symbols-light:list-alt-add",
+    name: "FAQs",
+    url: "/admin/faqs",
+    icon: "material-symbols:quiz-outline-rounded",
   },
   {
-    name: "In Progress",
-    url: "/documents/in-progress",
-    icon: "marketeq:chart-column-grow",
+    name: "News",
+    url: "/admin/news",
+    icon: "emojione:newspaper",
   },
   {
-    name: "Produced",
-    url: "/documents/produced",
-    icon: "i-fluent:stack-star-16-filled",
+    name: "Blogs",
+    url: "/admin/blogs",
+    icon: "hugeicons:blogger",
   },
   {
-    name: "Done",
-    url: "/documents/done",
-    icon: "i-material-symbols:cloud-done-rounded",
+    name: "Services",
+    url: "/admin/services",
+    icon: "hugeicons:customer-service-01",
+  },
+  {
+    name: "Sources",
+    url: "/admin/sources",
+    icon: "token:source",
   },
 ];

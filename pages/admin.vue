@@ -1,12 +1,22 @@
 <template>
-  <section>
-    <h1>Page of A D M I N</h1>
-  </section>
+  <div>
+    <RouterView />
+  </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  layout: "admin",
-  middleware: 'auth'
+import { onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+onMounted(() => {
+  router.push('/admin/categories');
 });
+definePageMeta({
+  layout: 'admin',
+  middleware: 'auth'
+}
+);
+
 </script>
