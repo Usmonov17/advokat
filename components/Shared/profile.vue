@@ -9,7 +9,7 @@
           <p class="capitalize text-[16px]">Admin's documents</p>
         </div>
         <UDivider class="my-3" />
-        <NuxtLink to="/profile">
+        <NuxtLink>
           <UButton color="blue" variant="ghost" class="w-full">Profile</UButton>
         </NuxtLink>
         <UButton color="red" variant="ghost" @click="logOut" class="w-full">Log out</UButton>
@@ -28,8 +28,4 @@ const logOut = () => {
   authToken.value = null
   router.push('/auth')
 }
-
-definePageMeta({
-  middleware: 'auth',
-});
 </script>
