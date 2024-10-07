@@ -32,7 +32,7 @@ import { useCookie } from '#app';
 import { useRouter } from 'vue-router';
 import { ref, reactive, onMounted } from 'vue';
 
-const url = import.meta.env.VITE_URL;
+const url = process.env.VITE_URL;
 const router = useRouter();
 const toast = useToast();
 const simpleLoad = ref(false);

@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import { useCookie } from "#app";
 import axios from "axios";
 
-const url = import.meta.env.VITE_URL;
+const url = process.env.VITE_URL;
 
 interface Category {
   id: number;
