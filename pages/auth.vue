@@ -32,8 +32,7 @@ import { useCookie } from '#app';
 import { useRouter } from 'vue-router';
 import { ref, reactive, onMounted } from 'vue';
 
-const config = useRuntimeConfig()
-const url = config.apiUrl
+const url = process.env.API_URL
 const router = useRouter();
 const toast = useToast();
 const simpleLoad = ref(false);
