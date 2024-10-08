@@ -8,8 +8,6 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", "@nuxt/image", "@pinia/nuxt"],
 
   runtimeConfig: {
-    public: {
-      API_BASE_URL: process.env.API_BASE_URL,
-    },
+    apiUrl: process.env.API_URL,
   },
 });
