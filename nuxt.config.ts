@@ -2,4 +2,9 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
   modules: ["@nuxt/ui", "@nuxt/image", "@pinia/nuxt"],
+  runtimeConfig: {
+    public: {
+      apiUrl: "https://api.dezinfeksiyatashkent.uz/api/",
+    },
+  },
 });

@@ -2,7 +2,8 @@ import { defineStore } from "pinia";
 import { useCookie } from "#app";
 import axios from "axios";
 
-const url = process.env.API_URL;
+const config = useRuntimeConfig();
+const url = config.public.apiUrl;
 
 interface Category {
   id: number;
