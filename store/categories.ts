@@ -2,8 +2,7 @@ import { defineStore } from "pinia";
 import { useCookie } from "#app";
 import axios from "axios";
 
-const config = useRuntimeConfig();
-const url = config.public.apiUrl;
+const url = "https://api.dezinfeksiyatashkent.uz/api/";
 
 interface Category {
   id: number;

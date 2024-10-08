@@ -32,8 +32,7 @@ import { useCookie } from '#app';
 import { useRouter } from 'vue-router';
 import { ref, reactive, onMounted } from 'vue';
 
-const config = useRuntimeConfig()
-const url = config.public.apiUrl
+const url = "https://api.dezinfeksiyatashkent.uz/api/"
 const router = useRouter();
 const toast = useToast();
 const simpleLoad = ref(false);
